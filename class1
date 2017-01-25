@@ -1,0 +1,38 @@
+Goal of the course - given an input circuit design, determine if the circuit is correct (does what it is supposed to do).
+
+One of the ways to do this is simulation. Although this is a necessary evil, it is useful when we know the distribution of the input data.
+But bugs escape as it is near impossible to do a nexhaustive search over all combinations.
+
+Another way would be to use formal verification. Here it is assumed we know the truth table or expected outputs for a given input.
+Using boolean algebra, polynomial algebra, etc we can mathematically prove if solution exists and how many solutions exist.
+
+Consider a set of equations:
+
+4x + 3y = 5
+3x + 5y = 10
+
+This can be solved by reducing the above equations to
+12x + 9y = 15
+12x + 20y = 40
+
+which gives 11y = 15.
+
+The set of equations 11y = 15 & 12x + 9y = 15 is much easier to solve than the previous set of equations. 
+This equality is equivalence checking. 
+
+We use a similar reduction of sets from Real Number to Finite Fields. And use this to characterize the solution set itself instead of 
+finding the solutions. We can thus easily find if the solution exists and how many but not the exact solution themselves.
+
+Once we know if solution exists and how many, we can test the circuits using domain knowledge of the inputs.
+
+Finite field F_(p^k) has p^k elements where p is a prime number.
+
+		  __________
+		-|			|
+		-|			|
+k i/p	-|	 ckt 	|- o/p
+		-|			|
+		-|__________|
+		
+This is a mapping from B^k to B. Thus a finite field with p=2 and k=k.
+		
