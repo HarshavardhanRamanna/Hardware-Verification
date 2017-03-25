@@ -28,10 +28,10 @@ Once we know if solution exists and how many, we can test the circuits using dom
 Finite field F_(p^k) has p^k elements where p is a prime number.
 
 		  __________
-		-|			|
-		-|			|
-k i/p	-|	 ckt 	|- o/p
-		-|			|
+		-|	    |
+		-|          |
+    k i/p       -|    ckt   |- o/p
+		-|	    |
 		-|__________|
 		
 This is a mapping from B^k to B. Thus a finite field with p=2 and k=k.
